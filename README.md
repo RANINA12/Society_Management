@@ -58,7 +58,7 @@
     <strong>Client-side (.env in <code>client</code>):</strong><br>
     <code>REACT_APP_MAPBOX_ACCESS_TOKEN</code> – API key for Mapbox<br>
     <code>REACT_APP_BACKEND_API</code> – Base URL of the API server (e.g., <code>http://localhost:3000</code>)<br>
-    <code>REACT_APP_STRIPE_KEY</code> – API key for Stripe
+<!--     <code>REACT_APP_STRIPE_KEY</code> – API key for Stripe -->
   </li>
   <li>
     <strong>Server-side (.env in <code>server</code>):</strong><br>
