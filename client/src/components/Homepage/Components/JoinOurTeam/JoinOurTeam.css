@@ -1,0 +1,138 @@
+/* Main Container */
+.joinourteam_main {
+  background: rgba(26, 41, 64, 0.85);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 50px;
+  transition: all 0.3s ease;
+}
+
+.joinourteam_main:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Side */
+.joinourteam_textside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  animation: fadeIn 1s ease;
+}
+
+/* Heading */
+.joinourteam_heading {
+  font-family: "Syne", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  text-align: center;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.joinourteam_heading:hover {
+  color: #f79d2b;
+}
+
+/* Button */
+.joinourteam_button {
+  background: #f79d2b;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 60px;
+  width: 451px;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  transition: all 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.joinourteam_button:hover {
+  background: #ffad4d;
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.joinourteam_button:active {
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+
+/* Medium Screens */
+@media only screen and (max-width: 992px) {
+  .joinourteam_textside {
+    justify-content: center;
+  }
+
+  .joinourteam_heading {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 30px;
+  }
+
+  .joinourteam_button {
+    width: 300px;
+    height: 50px;
+  }
+}
+
+/* Small Screens */
+@media only screen and (max-width: 768px) {
+  .joinourteam_main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .joinourteam_button {
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra Small Screens */
+@media only screen and (max-width: 576px) {
+  .joinourteam_imageside img {
+    height: 214px;
+    width: 140px;
+  }
+
+  .joinourteam_heading {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  .joinourteam_button {
+    width: 250px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

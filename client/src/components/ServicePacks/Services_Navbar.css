@@ -1,0 +1,110 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #1a2940;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #162233;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    gap: 1rem;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+    padding: 0.5rem 0;
+    text-align: center;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline animation for links */
+.navbar-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #e47c5d;
+    transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+}
+
+.navbar-link:hover {
+    color: #e47c5d;
+}
+
+/* Call to Action (CTA) Link */
+.navbar-link--cta {
+    color: #ffffff;
+    background-color: #e47c5d;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-link--cta:hover {
+    background-color: #ff8b6a;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        margin-top: 0.75rem;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .navbar-link {
+        margin-right: 0;
+        margin-bottom: 0.75rem;
+    }
+
+    .navbar-link--cta {
+        margin-left: 0;
+        margin-top: 0.75rem;
+    }
+}

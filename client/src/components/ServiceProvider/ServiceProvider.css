@@ -1,0 +1,207 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Service Provider Inner */
+.serviceProvider_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffedea, #e2f4ff);
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+.serviceProvider_heading h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  color: #222222;
+  margin-top: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.serviceProvider_heading p {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #555555;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Add subtle color change on hover for heading */
+.serviceProvider_heading h1:hover {
+  color: #f79d2b;
+}
+
+/* Service Person Main */
+.servicePerson_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 25px 50px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.servicePerson_main:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Content and Image Styles */
+.servicePerson_content {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.servicePerson_image {
+  margin-right: 25px;
+}
+
+.servicePerson_image img {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.servicePerson_image img:hover {
+  transform: scale(1.05);
+}
+
+/* Name, Address, and Info Styles */
+.servicePerson_name {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.servicePerson_address {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 8px;
+}
+
+.servicePerson_experience,
+.servicePerson_jobsDone {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  color: #444444;
+}
+
+/* Button Styles with Hover */
+.servicePerson_button button {
+  border: none;
+  outline: none;
+  background: #f79d2b;
+  border-radius: 7px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.servicePerson_button button:hover {
+  background-color: #ffae40;
+  transform: translateY(-3px);
+}
+
+/* Responsive Design for Medium Devices */
+@media only screen and (max-width: 768px) {
+  .servicePerson_main {
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 20px;
+  }
+
+  .servicePerson_content {
+    margin-bottom: 10px;
+  }
+
+  .serviceProvider_heading h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .serviceProvider_heading p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+/* Responsive Design for Small Devices */
+@media only screen and (max-width: 576px) {
+  .servicePerson_image {
+    margin-right: 10px;
+  }
+
+  .servicePerson_image img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .servicePerson_name {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .servicePerson_address {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 4px;
+  }
+
+  .servicePerson_experience,
+  .servicePerson_jobsDone {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .servicePerson_button button {
+    font-size: 16px;
+    padding: 6px 18px;
+  }
+
+  .serviceProvider_heading h1 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .serviceProvider_heading p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

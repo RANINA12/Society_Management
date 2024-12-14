@@ -1,0 +1,135 @@
+.payment-texts{
+    font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.payment-texts-2{
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #1a1a1a; 
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.title span {
+    color: #5f57f7;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: #9ca3af;
+}
+
+.credentials {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.credentials-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.credentials-table {
+    position: relative;
+    margin-bottom: 24px;
+    overflow-x: auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+
+    @media (min-width: 1024px) {
+        width: 33.3333%;
+    }
+}
+
+.credentials-table thead th {
+    padding: 18px 24px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #4b5563;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.credentials-table tbody td {
+    padding: 18px 24px;
+    font-size: 1rem;
+    color: #4b5563;
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.credentials-table tbody td:last-child {
+    cursor: pointer;
+}
+
+.credentials-table tbody td:hover {
+    background-color: #f9fafb;
+}
+
+.credentials-table tbody td:last-child:hover {
+    background-color: #e5e7eb;
+}
+
+.stripe-button {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+}
+
+.table-main{
+    margin-top: 50px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1a1a1a;
+}
+@media only screen and (max-width: 768px) {
+    .payment-texts{
+     
+      font-size: 18px;
+      line-height: 24px;
+    
+    }
+    
+    .payment-texts-2{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .payment-texts{
+     
+      font-size: 14px;
+      line-height: 20px;
+    
+    }
+    
+    .payment-texts-2{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .table-main{
+        margin-top: 20px !important;
+    }
+    
+}
