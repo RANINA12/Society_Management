@@ -104,7 +104,7 @@ const acceptRequest = async (req, res) => {
             email: otp.email,
             otp: otp.otp,
         });
-
+//hello its  ok
         await newJobStartOtp.save();
         console.log("Saved::otp::ready for validation");
 
