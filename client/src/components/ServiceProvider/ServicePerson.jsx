@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { getUserToken } from "./../../utils/cookies/getUserToken";
 import "./ServiceProvider.css";
+import workerImage from "./images/worker-image.png";
 
 function ServicePerson({
     handyman_id,
@@ -93,7 +94,8 @@ function ServicePerson({
         <div className="servicePerson_main">
             <div className="servicePerson_content">
                 <div className="servicePerson_image">
-                    <img src={profile} alt="" />
+                    
+                     <img src={workerImage} alt="USER PIC" />
                 </div>
                 <div className="servicePerson_info">
                     <div className="servicePerson_name">{name}</div>
