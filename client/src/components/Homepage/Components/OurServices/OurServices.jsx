@@ -27,7 +27,7 @@ function OurServices(props) {
                 <div className="ourServices_services">
                     {services.map((service, index) => (
                         <div className="services_box" key={index}>
-                            <Link to={`/services/ServiceName`}>,
+                            <Link to={`/services/${service.name}`}>,
                                 <div className="services_image">
                                     <img src={service.image} alt="" />
                                 </div>
