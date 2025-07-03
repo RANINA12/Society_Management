@@ -1,4 +1,5 @@
-const express = require("express");
+ origin: "https://your-vercel-app.vercel.app", // ← your actual frontend URL
+  credentials: true,const express = require("express");
 const app = express();
 const cors = require("cors");
 
@@ -8,7 +9,8 @@ const port = process.env.PORT || 5000;
 // use middlewares
 // Set up CORS
 // app.use(cors({
-
+ origin: "https://society-management-lilac.vercel.app/",
+  credentials: true,
 // }));
 app.use(cors());
 app.use(express.json());
