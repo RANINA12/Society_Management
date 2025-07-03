@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 // use middlewares
 // Set up CORS
  app.use(cors({
- origin: "https://society-management-lilac.vercel.app/",
+ origin: "https://society-management-mauve.vercel.app/",
   credentials: true,
  }));
 // app.use(cors());
