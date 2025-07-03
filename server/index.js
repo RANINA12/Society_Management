@@ -1,5 +1,4 @@
- origin: "https://your-vercel-app.vercel.app", // ← your actual frontend URL
-  credentials: true,const express = require("express");
+
 const app = express();
 const cors = require("cors");
 
