@@ -2,8 +2,16 @@
   <img src="client/public/logo.png" alt="Society Manage Logo">
 </div>
 
+<p>
+  ⚠️ Temporary Service Issue
+This project is currently facing a server-related issue due to a recent deployment bug.
+I’m actively working on fixing it and will restore full functionality soon.
+Thank you for your patience.
+</p>
+
 <h1>Society Manage</h1>
 <p>
+  
   Welcome to <strong>Society Manage</strong>, your one-stop platform for local services. Whether you need a handyman, plumber, maid, or any other service, Society Manage connects you with trusted professionals in your area. Our easy-to-use interface lets you quickly find and book the services you need, making life easier and more convenient.
 </p>
 
